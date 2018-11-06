@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	-webkit-animation-name: fadeo;
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 3s;
+    /*background-image: url('../images/hoja rayada.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+@media(min-width: 800px){
+	.nu-div, .aa-div{
+		padding: 3em;
+		margin: 10px 50px;
+	}
+
+	header p{
+		margin: 3px 60px;
+	}
+
+	#infoInicio {
+	margin-top: -20px;
+	}
+	#info1, #info2{
+	width: 80%;
+	}
+}
+
+@media(max-width: 800px){
+	.nu-div{
+		padding: 1em;
+	}
+
+	header p{
+		margin: 3px 30px;
+	}
+
+	#infoInicio {
+	margin-top: -5px;
+	}
+	#info1, #info2{
+	width: 100%;
+	}
+	#imagenGal1, #imagenGal2{
+	width: 340px;
+	height: 340px;
+	}
+}
+
+
+header {
+	font-family: titulos;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	align-items: center;
+	border-bottom: 3px #ccc solid;
+	background-color: red;
+	font-size: 24px;
+}
+header p{
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+@font-face{
+	font-family: "titulos";
+	src: url("./fonts/P_C.ttf") format("truetype");
+}
+@font-face{
+	font-family: "Jelly";
+	src: url("./fonts/Jelly.ttf") format("truetype");
+}
+@font-face{
+	font-family: "VCR";
+	src: url("./fonts/VCR.ttf") format("truetype");
+}
+@-webkit-keyframes gama {  
+  0% { background-color: #FFFFFF; }
+  25% { background-color: #EDEDED; }
+  50% { background-color: #E4E4E4; }
+  75% { background-color: #EDEDED; }
+  100% { background-color: #FFFFFF; }
+}
+@-webkit-keyframes fadeo {  
+  0%{ background-color: #EDEBEB; }
+  50%{ background-color: #E4E4E4; }
+  100% { background-color: #EDEBEB; }
+}
+/*h2{
+	animation: fadeo 5s infinite;
+}*/
+
+#infoInicio h2{
+	margin-bottom: 10px;
+}
+#infoInicio p{
+	margin-bottom: 15px;
+}
+
+#info1, #info2{
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nu-div #galeria1, .nu-div #galeria2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#galeria1 button, #galeria2 button{
+	font-family: VCR;
+	height: 60px;
+	width: 40px;
+	margin: auto 10px;
+	background: none;
+}
+#galeria1 button:focus, #galeria2 button:focus{
+	outline: none;
+}
+#galeria1 button p, #galeria2 button p{
+	font-size: 30px;
+}
+#galeria1 img, #galeria2 img{
+	border: 2px black solid;
+}
+
+#info1, #info2{
+	font-size: 18px;
+	background-color: white;
+}
+
+.nu-div, .aa-div{
+	background-color: #ccc;
+	align-items: center;
+	justify-content: center;
+	display: block;
+	/*display: flex;*/
+}
+
+#galeria1 h3{
+	font-size: 50px;
+	font-family: titulos;
+}
+
+#galeria2 h3{
+	margin-top: 24px;
+	font-size: 50px;
+	font-family: titulos;
+}
